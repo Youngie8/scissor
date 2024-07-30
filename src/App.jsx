@@ -1,10 +1,12 @@
-import './App.css'
+import FormComponent from './components/form'
+import Navbar from './components/navbar'
 
 function App() {
 
   return (
     <div>
-      SCISSOR.
+      <Navbar />
+      <FormComponent />
     </div>
   )
 }
