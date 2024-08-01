@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
   color: var(--color-0);
+  outline: none;
 }
 :root {
   --color-0: #fff;
@@ -19,11 +20,30 @@
   --color-10: #001219;
   --color-11: #000;
 }
+/* Span */
 .color-1 {
+  color: var(--color-1);
+}
+.color-6 {
   color:var(--color-6);
+}
+.color-8{
+  color: var(--color-8);
+}
+.color-9 {
+  color: var(--color-9);
+}
+.bg-dot {
   font-weight: 900;
   font-size: 70px;
   line-height: 0;
+}
+.txt-lg {
+  font-size: 180%;
+  font-weight: 700;
+}
+.txt-bold {
+  font-weight: 700;
 }
 .link {
   text-decoration: none;
@@ -40,12 +60,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
   padding: 0 5%;
   color: var(--color-0);
   border-bottom: 2px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to left, var(--color-2), var(--color-8));
+  border-image-source: linear-gradient(to right, var(--color-1), var(--color-8), var(--color-9));
 }
 .nav-logo {
   font-weight: 700;
@@ -65,3 +86,166 @@ body {
   border-width: 2px;
   border-image-source: linear-gradient(to left, var(--color-2), var(--color-8));
 }
+.formComponent {
+  padding: 80px 5%;
+}
+.header {
+  font-size: 94px;
+  margin: 0 auto;
+  font-weight: 800;
+  line-height: 0;
+  background: linear-gradient(to bottom, var(--color-1), var(--color-4), var(--color-8), var(--color-9));
+  background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.sub-header {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 200;
+  color: rgb(180,180,182);
+}
+.formComponent p {
+  letter-spacing: 1.8px;
+}
+.formComponent form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin:80px auto;
+  padding: 0;
+  height: 50px;
+  border: 1px solid rgb(180,180,182);
+  border-radius: 1px;
+}
+.formComponent input, .formComponent button {
+  margin: 0;
+  border: none;
+}
+.formComponent input {
+  background-color: var(--color-10);
+  width: 85%;
+  height: calc(100% - 2px);
+  padding-left: 5px;
+  outline: none;
+}
+.formComponent button {
+  height: 100%;
+  background-color: var(--color-5);
+  width: 15%;
+}
+.login {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+.login h3 {
+  font-size: 36px;
+  margin: 0;
+}
+.login h5 {
+  margin: 0;
+}
+.login label {
+  display: block;
+  justify-content: start;
+  margin-top: 30px;
+}
+.login input{
+  width: 60%;
+  height: 40px;
+  background: var(--color-0);
+  color: var(--color-10);
+  outline: none;
+  padding-left: 8px;
+  border: 2px solid var(--color-10);
+  border-radius: 10px;
+}
+.login button{
+  margin: 20px 0;
+  width: calc(60% + 8px);
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-8);
+}
+.about-hero {
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+}
+.about-hero .icon {
+  font-size: 220px; 
+  margin: 0 auto;
+  
+}
+.about-hero h1 {
+  font-size: 94px;
+  margin: 0 auto;
+  font-weight: 800;
+  background: linear-gradient(to bottom, var(--color-1), var(--color-4), var(--color-8), var(--color-9));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.about-hero p {
+  color: rgba(180,180,182, 1);    /* add animations here*/
+  max-width: 656px;
+  font-weight: 200;
+  font-size: 18px;
+}
+.about-sections {
+  padding: 0 4%;
+  margin: 40px 0;
+}
+.about-sections h1 {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  background: linear-gradient(to right, var(--color-1), var(--color-4), var(--color-9));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.about-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0 ;
+  text-align: justify;
+  border-bottom: 1px solid rgba(180,180,182, .3);
+}
+.about-section p {
+  max-width: 40%;
+}
+/* about section icons */
+.social-icons, .prof-student-icons, .busi-icon {
+  font-size: 150px;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+  column-gap: 40px;
+  place-self: auto;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-10);
+  border-radius: 10px;
+}
+#error-page {
+  text-align: center;
+}
+
+
+
+/* phone -Friday*/ 

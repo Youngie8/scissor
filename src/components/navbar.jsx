@@ -6,16 +6,18 @@ const Navbar = () => {
     <div className='navbar'>
         <div className="nav-logo">
             <h1>
-              <Link className='link' to={'/'}>SCISSOR<span className='color-1'>.</span></Link>
+              <Link className='link' to={'/'}>SCISSOR<span className='color-6 bg-dot'>.</span></Link>
             </h1>
         </div>
         <div className="nav-links">
             <Link className='link' to={'/about'}>About</Link>
-            <Link className='link' to={'/dev'}>Developer</Link>
+            <Link className='link' to={'/dev'}>Dashboard</Link>
         </div>
-        <button className="nav-btn">
-            Login
-        </button>
+        <Link to={'/login'}>
+          <button className="nav-btn">
+              Login
+          </button>
+        </Link>
     </div>
   )
 }
