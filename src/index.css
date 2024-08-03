@@ -50,18 +50,23 @@
   color: inherit;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
   background: var(--color-10);
+  max-width: 1440px;
 }
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-  padding: 0 5%;
+  height: 80px;
+  width: 92vw;
+  background-color: rgba(0, 18, 25, 0.88);
+  padding: 0 4vw;
   color: var(--color-0);
   border-bottom: 2px solid;
   border-image-slice: 1;
@@ -86,8 +91,44 @@ body {
   border-width: 2px;
   border-image-source: linear-gradient(to left, var(--color-2), var(--color-8));
 }
+/* Sidebar */
+.sidebar {
+  position: relative;
+  height: 100vh;
+  border: 1px solid rgba(180,180,182, .07);
+  width: 280px;
+  background-color: rgba(0, 18, 25, 0.88);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-sidebar {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.sidebar-link, .back-home {
+  width: 180px;
+  text-decoration: none;
+  height: 40px;
+  text-align: center;
+  padding: 10px 18px;
+  /* box-shadow: 0px 0px 4px 4px rgba(180,180,182, 0.4); */
+  background-color: inherit;
+  border: 1px solid rgba(180,180,182, .1);
+  border-radius: 5px;
+}
+.back-home {
+  
+}
+/* Form Component */
 .formComponent {
-  padding: 80px 5%;
+  margin: 80px auto;
+  padding: 80px 5% 0 5%;  
 }
 .header {
   font-size: 94px;
@@ -172,11 +213,12 @@ body {
   background-color: var(--color-8);
 }
 .about-hero {
+  margin-top: 80px;
   display: flex;
   align-items: center;
   padding: 0 4%;
   justify-content: space-between;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
 }
 .about-hero .icon {
   font-size: 220px; 
@@ -217,7 +259,7 @@ body {
   align-items: center;
   padding: 40px 0 ;
   text-align: justify;
-  border-bottom: 1px solid rgba(180,180,182, .3);
+  border-bottom: 1px solid rgba(180,180,182, .2);
 }
 .about-section p {
   max-width: 40%;
@@ -243,6 +285,10 @@ body {
   border-radius: 10px;
 }
 #error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 80px);
   text-align: center;
 }
 
