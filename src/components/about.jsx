@@ -13,8 +13,8 @@ const About = () => {
         <h1> SCISSOR.</h1>
         <p>Scissor is your go-to link management tool. We simplify the way you share links by transforming long, complex URLs into short, memorable ones. Enjoy increased click-through rates, enhanced branding, and valuable analytics to optimize your online presence</p>
         </div>
-        <div className="icon">
-        <FontAwesomeIcon icon={faScissors} /><span>--</span>
+        <div className="icon lg-none">
+        <FontAwesomeIcon icon={faScissors} /><span >--</span>
         </div>
       </div>
       <div className="about-sections">

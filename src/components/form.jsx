@@ -6,11 +6,11 @@ import { faScissors } from '@fortawesome/free-solid-svg-icons'
 const FormComponent = () => {
   return (
     <div className='formComponent'>
-      <h1 className='header'>Scissor <FontAwesomeIcon icon={faScissors} />--/...</h1>
+      <h1 className='header'>Scissor <FontAwesomeIcon icon={faScissors} className='sm-0'/><span className='md-none'>--/...</span></h1>
       <h4 className='sub-header'> Chop long links into tiny, shareable bites!</h4>
       <p>Scissor is your link-shortening sidekick. Paste any long URL, and we'll generate a short, clean link for easy sharing across all your platforms</p>
       <form>
-        <input type="url" />
+        <input type="url" required/>
         <button type="submit">Shorten</button>
       </form>
     </div>

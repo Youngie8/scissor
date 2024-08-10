@@ -9,7 +9,7 @@ const Navbar = () => {
               <Link className='link' to={'/'}>SCISSOR<span className='color-6 bg-dot'>.</span></Link>
             </h1>
         </div>
-        <div className="nav-links">
+        <div className="nav-links sm-none">
             <Link className='link' to={'/about'}>About</Link>
             <Link className='link' to={'/dashboard'}>Dashboard</Link>
         </div>

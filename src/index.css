@@ -128,17 +128,16 @@ body {
   padding: 80px 5% 0 5%;  
 }
 .header {
-  font-size: 94px;
+  font-size: 4rem;
   margin: 0 auto;
   font-weight: 800;
-  line-height: 0;
   background: linear-gradient(to bottom, var(--color-1), var(--color-4), var(--color-8), var(--color-9));
   background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 .sub-header {
-  font-size: 40px;
+  font-size: 2rem;
   margin: 0;
   font-weight: 200;
   color: rgb(180,180,182);
@@ -151,7 +150,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin:80px auto;
+  margin: 80px auto;
   padding: 0;
   height: 50px;
   border: 1px solid rgb(180,180,182);
@@ -218,9 +217,8 @@ body {
   height: calc(100vh - 80px);
 }
 .about-hero .icon {
-  font-size: 220px; 
+  font-size: 200px; 
   margin: 0 auto;
-  
 }
 .about-hero h1 {
   font-size: 94px;
@@ -291,4 +289,38 @@ body {
 
 
 
-/* phone -Friday*/ 
+@media only screen and (max-width: 1024px) {
+  .lg-none {
+    display: none;
+  }
+} 
+/* phone -Friday*/
+@media only screen and (max-width: 756px) {
+  .md-none {
+    display: none;
+  }
+} 
+
+@media only screen and (max-width: 550px) {
+  .sm-none {
+    display: none;
+  }
+  .sm-0 {
+    font-size: 0%;
+  }
+  .formComponent {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+  }
+  .formComponent form {
+    margin: 10px auto;
+  }
+  .formComponent input {
+    width: 60%;
+  }
+  .formComponent button {
+    width: 40%;
+  }
+} 
